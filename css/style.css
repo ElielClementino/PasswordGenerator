@@ -1,0 +1,89 @@
+html > body{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin-top:8rem;
+    color:#fff;
+    font-weight:900;
+    background-color: rgb(206, 206, 206);
+    font-family: 'Roboto Serif', serif;
+}
+input, button{
+    cursor:pointer;
+    
+}
+input[type='checkbox'] {
+    -webkit-appearance:none;
+    width:1.5rem;
+    height:1.5rem;
+    background: #fff;
+    border-radius:5px;
+    border:2px solid rgb(12, 12, 12);
+}
+input[type='checkbox']:checked {
+    background: rgb(28, 145, 28);
+}
+
+.main_container{
+    width:30rem;
+    background: linear-gradient(10deg,#aa1355,#ee1074);
+    box-shadow: 0 10px  10px 10px #f01075;
+}
+
+
+.section_header{
+    padding:2rem;
+}
+
+
+.section_password{
+    width:93%;
+    height:4rem;
+    background-color: #ed0f73;
+    display:flex;
+    justify-content: space-around;
+    font-size:2rem;
+    padding:1rem;
+}
+
+
+.section_password > p{
+    align-self: center;
+}
+
+
+.password_settings{
+    padding: 1rem;
+}
+
+
+.password_length{
+    text-align: center;
+    height:2rem;
+    margin:2% 42%  2% ;
+    display:block;
+}
+
+
+.question_password, .password_choices_length {
+    font-size:2rem;
+    text-align: center;
+    text-shadow: 7px 3px 5px #000;
+}
+
+.checkbox_choices{
+    display:flex;
+    justify-content: space-between;
+    margin:2rem 0;
+    font-size:1.4rem;
+}
+.password_generate_button{
+    width:100%;
+    background-color:#fff;
+    color:#ef0b72;
+    font-weight: 900;
+    padding:1.5rem;
+    font-size:2rem;
+    border:none;
+    border-radius:10px;
+}

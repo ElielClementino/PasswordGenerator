@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Um gerador de senha feito para você que precisa gerar senhas pois não quer usar as mesmas senhas em todos os lugares ">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senha</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js" defer></script>
+</head>
+<body>
+    <main class="main_container">
+
+        <section class="section_header">
+            <section class="section_password">
+                <p class="password">--Senha--</p>
+            </section>
+        </section>
+
+    <section class="password_settings">
+        <section class="password_choices_length">
+            <label>Quantos caracteres deseja que a senha tenha ?</label>
+            <input type='number' value='8' min='8' max="30" class="password_length">
+        </section>
+        <section class="password_choices">
+            <h1 class="question_password">Quais das configurações abaixo deseja que a senha possua ?</h1>
+            <div class="checkbox_choices">
+                <label>Letras minúsculas</label>
+                <input type="checkbox" class="lower_letter" checked>
+            </div>
+            <div class="checkbox_choices">
+                <label>Letras maiúsculas</label>
+                <input type="checkbox" class="upper_letter">
+            </div>
+            <div class="checkbox_choices">
+                <label>Numeros</label>
+                <input type="checkbox" class="numbers">
+            </div>
+            <div class="checkbox_choices">
+                <label>Caracteres especiais</label>
+                <input type="checkbox" class="especial">
+            </div>
+            <button class="password_generate_button">Gerar Senha</button>
+        </section>
+    </section>
+
+    </main>
+</body>
+</html>
