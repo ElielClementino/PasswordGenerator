@@ -1,0 +1,39 @@
+.js-toast {
+    margin: -30rem -2rem;
+    position: fixed;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    border-radius: 8px;
+    white-space: nowrap;
+    color: #fff;
+    background: linear-gradient(10deg,#aa1355,#ee1074);
+    box-shadow: 0 10px  10px 10px #f01075;
+    animation: toast-move-in-top cubic-bezier(0.22, 0.58, 0.12, 0.98) 0.8s;
+    z-index: 10000;
+  }
+
+  .js-toast.hide {
+    animation: toast-fade-out cubic-bezier(0.22, 0.58, 0.12, 0.98) 1s forwards;
+  }
+  
+  @keyframes toast-move-in-top {
+    from {
+      opacity: 0;
+      transform: translate(0, 5em);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+  
+  @keyframes toast-fade-out {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+    }
+  }

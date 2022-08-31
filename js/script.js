@@ -11,6 +11,7 @@ const lettersArray = ['a', 'b', 'c', 'd', 'e' , 'f', 'g', 'h', 'i','j', 'k', 'l'
 const numbersArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 const especialArray = ['!', '@', '#', '$', '%', '*', '(', ')', '_', '+', '=', '|', ';', '~', '^', ']', '[', '.']
 
+// Gerador de senha
 
 const lowerAdd = event =>{
     let chosenChar = lettersArray[Math.floor(Math.random()*lettersArray.length)]
@@ -57,8 +58,33 @@ const finalGenerator = event =>{
         let passwordIndex = choicesSettings()
         passwordGenerated.push(passwordIndex)
     }
-    console.log(length)
+    showToast('Sua senha foi gerada com sucesso!', 4000)
     return password.innerText = passwordGenerated.join('');
     
 }
+// toast após gerar senha
+const body = document.querySelector('body')
+const toastDiv = document.querySelector('.toast')
+const createH1 = document.createElement('h3')
+
+let toast = {
+    visible: false,
+    message: '',
+}
+
+const  showToast = ((message, timer) => {
+    toast.message = message;
+    createH1.innerText = message
+    createH1.classList.remove('hide')
+    createH1.classList.add('js-toast')
+    if(buttonGenerate){
+        toast.visible = true
+    }
+
+    toast.visible = false;
+    toastDiv.append(createH1)
+    return toastDiv
+})
+
+
 buttonGenerate.addEventListener('click', finalGenerator)
